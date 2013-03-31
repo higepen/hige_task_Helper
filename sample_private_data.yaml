@@ -1,0 +1,24 @@
+account:
+  mail: "your mail adress"
+  pass: "your password"
+---
+feed:
+#https:~はhttp:~に直す
+  - url: "http://www.google.com/calendar/feeds/~~~~~/basic"
+  - url: "http://www.google.com/calendar/feeds/~~~~~/basic"
+---
+tag:
+  b: ":book:"
+  c: ":car:"
+---
+writefeed: "http://www.google.com/calendar/feeds/~~~~~/private/full"
+---
+task:
+  - buttonname: "Exercise"
+    title: "exercise"
+  - buttonname: "Study Italian"
+    title: "study Italian"
+  - buttonname: "Draw Picture"
+    title: "draw a picture"
+---
+exportfile: "hoge/org/diario.org"
