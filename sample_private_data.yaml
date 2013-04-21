@@ -14,11 +14,11 @@ tag:
 writefeed: "http://www.google.com/calendar/feeds/~~~~~/private/full"
 ---
 task:
-  - buttonname: "Exercise"
-    title: "exercise"
-  - buttonname: "Study Italian"
-    title: "study Italian"
-  - buttonname: "Draw Picture"
-    title: "draw a picture"
+  - taskname: "Exercise"
+    taskdetail: "exercise"
+  - taskname: "Study Italian"
+    taskdetail: "study Italian"
+  - taskname: "Draw Picture"
+    taskdetail: "draw a picture"
 ---
 exportfile: "hoge/org/diario.org"
