@@ -1,24 +1,23 @@
-account:
-  mail: "your mail adress"
-  pass: "your password"
+account:    #Gmailのアカウント名とパスワードを記入
+  mail: your mail adress
+  pass: your password
 ---
-feed:
-#https:~はhttp:~に直す
-  - url: "http://www.google.com/calendar/feeds/~~~~~/basic"
-  - url: "http://www.google.com/calendar/feeds/~~~~~/basic"
+feed:   #各カレンダー-->カレンダーの情報:Calendar Details-->限定公開URL:Private AdressのところのXMLボタンを押して出てくるURLを記入。httpsはhttpと書き換える。何個でもOK。
+  - url: http://www.google.com/calendar/feeds/~~~~~/basic
+  - url: http://www.google.com/calendar/feeds/~~~~~/basic
 ---
-tag:
+tag:    #コロンで行が終わっているとエラーになるのでクォートする。
   b: ":book:"
-  c: ":car:"
+  c: ":health:"
 ---
-writefeed: "http://www.google.com/calendar/feeds/~~~~~/private/full"
+writefeed: http://www.google.com/calendar/feeds/default/private/full      #これはこのままで良い
 ---
-task:
-  - taskname: "Exercise"
-    taskdetail: "exercise"
-  - taskname: "Study Italian"
-    taskdetail: "study Italian"
-  - taskname: "Draw Picture"
-    taskdetail: "draw a picture"
+task:   #何個でもOK。taskdetailはgoogle calendarに書き込むときのタイトルになる。ないなら空欄でもOK。
+  - taskname: ランニングをする
+    taskdetail: ランニングをした :h
+  - taskname: イタリア語の勉強をする
+    taskdetail: イタリア語の勉強をした
+  - taskname: 掃除をする
+    taskdetail:
 ---
-exportfile: "hoge/org/diario.org"
+exportfile: /hoge/org/diario.org    # google calendarのデータをこのファイルに追記。なかったら作成される。
